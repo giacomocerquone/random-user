@@ -1,0 +1,17 @@
+{
+  "name": "random-user",
+  "version": "0.0.5",
+  "description": "Random users generator (wrapper of randomuser.me/api/)",
+  "repository": "",
+  "main": "index.js",
+  "keywords": [
+    "random",
+    "user",
+    "generator",
+    "person",
+    "random",
+    "randomuser.me"
+  ],
+  "author": "Giacomo Cerquone <cerquone96@hotmail.it> (http://giacomocerquone.com)",
+  "license": "MIT"
+}
