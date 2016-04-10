@@ -3,7 +3,7 @@
 var request = require('superagent');
 
 module.exports = function(type) {
-  return new Promise( (resolve, reject) => {
+  return new Promise( function(resolve, reject) {
 
     request
       .get('http://api.randomuser.me/')
@@ -11,7 +11,7 @@ module.exports = function(type) {
         if (err)
           reject(err);
 
-        let data = JSON.parse(res.text).results[0];
+        var data = JSON.parse(res.text).results[0];
 
         if (type === 'simple') {
           resolve({
