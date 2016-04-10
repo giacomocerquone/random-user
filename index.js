@@ -1,37 +1,30 @@
+'use strict';
+
 var request = require('superagent');
-var q       = require('q');
-
-var methods = {
-  simple: function(rawData) {
-
-    var simpleObject = {
-      name: rawData.name.first + ' ' + rawData.name.last,
-      email: rawData.email,
-      username: rawData.username,
-      password: rawData.password
-    };
-
-    return simpleObject;
-  }
-};
 
 module.exports = function(type) {
-  var deferred = q.defer();
+  return new Promise( (resolve, reject) => {
 
-  request
-    .get('http://api.randomuser.me/')
-    .end(function(err, res) {
-      if (err) deferred.reject(err);
+    request
+      .get('http://api.randomuser.me/')
+      .end(function(err, res) {
+        if (err)
+          reject(err);
 
-      var rawData = JSON.parse(res.text).results[0].user;
+        let data = JSON.parse(res.text).results[0];
 
-      if (methods[type]) {
-        deferred.resolve(methods[type](rawData));
-      } else {
-        deferred.resolve(JSON.parse(res.text).results[0].user);
-      }
+        if (type === 'simple') {
+          resolve({
+            firstName: data.name.first,
+            lastName: data.name.last,
+            email: data.email,
+            username: data.login.username,
+            password: data.login.password
+          });
+        } else {
+          resolve(data);
+        }
 
-    });
-
-  return deferred.promise;
+      });
+  });
 };
