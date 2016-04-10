@@ -22,7 +22,7 @@ randomUser('simple')
   .catch( (err) => console.log(err) );
 ```
 
-**[Read this if you need to import it in your angular 2 project.]**(https://medium.com/@s_eschweiler/using-external-libraries-with-angular-2-87e06db8e5d1#.sgaawgrcb)
+**[Read this if you need to import it in your angular 2 project.](https://medium.com/@s_eschweiler/using-external-libraries-with-angular-2-87e06db8e5d1#.sgaawgrcb)**
 
 ## Previous Version
 Actually there was a previous version of a module on npm with the same. I contacted the owner [sotojuan](https://www.npmjs.com/~sotojuan) and he agreed very kindly to let me rewrite completely the code and publish it under the same name, just bumping the version.
