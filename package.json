@@ -2,8 +2,11 @@
   "name": "random-user",
   "version": "0.0.5",
   "description": "Random users generator (wrapper of randomuser.me/api/)",
-  "repository": "",
+  "repository": "https://github.com/giacomocerquone/random-user.git",
   "main": "index.js",
+  "scripts": {
+    "build": ""
+  }
   "keywords": [
     "random",
     "user",
@@ -13,5 +16,11 @@
     "randomuser.me"
   ],
   "author": "Giacomo Cerquone <cerquone96@hotmail.it> (http://giacomocerquone.com)",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "superagent": "^1.8.3"
+  },
+  "devDependencies": {
+    "browserify": "^13.0.0"
+  }
 }
