@@ -5,15 +5,18 @@
   "repository": "https://github.com/giacomocerquone/random-user.git",
   "main": "index.js",
   "scripts": {
-    "build": ""
-  }
+    "build": "browserify index.js | uglifyjs -c -o dist/random-user.js"
+  },
   "keywords": [
     "random",
     "user",
     "generator",
     "person",
     "random",
-    "randomuser.me"
+    "randomuser.me",
+    "API",
+    "wrapper",
+    "ES6"
   ],
   "author": "Giacomo Cerquone <cerquone96@hotmail.it> (http://giacomocerquone.com)",
   "license": "MIT",
@@ -21,6 +24,7 @@
     "superagent": "^1.8.3"
   },
   "devDependencies": {
-    "browserify": "^13.0.0"
+    "browserify": "^13.0.0",
+    "uglify-js": "^2.6.2"
   }
 }
