@@ -21,13 +21,12 @@ randomUser('simple')
   .then( (data) => console.log(data) )
   .catch( (err) => console.log(err) );
 
-/*
+// Response Object
 { firstName: 'charlotte',
   lastName: 'frazier',
   email: 'charlotte.frazier@example.com',
   username: 'purplemouse814',
   password: 'zelda' }
-*/
 
 randomUser()
   .then( (data) => console.log(data) )
