@@ -9,7 +9,7 @@ If you're developing an application that will run on a server just install this 
 
 #### Client-Side JS
 If you want to use this library in a client-side javascript project, you can:
-1. Simply include it: `<script src="" type="text/javascript"></script>`
+1. Simply include it: `<script src="https://rawgit.com/giacomocerquone/random-user/master/dist/random-user.js" type="text/javascript"></script>`
 or
 2. Require it in a JS file like you do on node and then use browserify to build the dependencies (useful if you're already doing this in your project in other modules)
 
@@ -32,7 +32,7 @@ randomUser()
   .then( (data) => console.log(data) )
   .catch( (err) => console.log(err) );
 
-/*
+// Response Object
 { gender: 'female',
   name: { title: 'mrs', first: 'elisabeth', last: 'schäfer' },
   location:
@@ -58,7 +58,6 @@ randomUser()
      medium: 'https://randomuser.me/api/portraits/med/women/24.jpg',
      thumbnail: 'https://randomuser.me/api/portraits/thumb/women/24.jpg' },
   nat: 'DE' }
-*/  
 ```
 
 **[Read this if you need to import it in your angular 2 project.](https://medium.com/@s_eschweiler/using-external-libraries-with-angular-2-87e06db8e5d1#.sgaawgrcb)**
