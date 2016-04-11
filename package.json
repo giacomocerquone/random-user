@@ -5,7 +5,7 @@
   "repository": "https://github.com/giacomocerquone/random-user.git",
   "main": "index.js",
   "scripts": {
-    "build": "browserify index.js | uglifyjs -c -o dist/random-user.js"
+    "build": "browserify index.js --standalone randomUser | uglifyjs -c -o dist/random-user.js"
   },
   "keywords": [
     "random",
