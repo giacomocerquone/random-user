@@ -1,19 +1,19 @@
 # random-user
 
-This is a module I've worked on in an hour. It's substiantally a very simple node.js wrapper for the api service made available by [randomuser.me](https://randomuser.me/).
+This is a module I've worked on and finished in an hour. It's substiantally a very simple browser and node.js wrapper for the api service made available by [randomuser.me](https://randomuser.me/).
 
 ## Installation
 #### Node.js
 If you're developing an application that will run on a server just install this module from npm: `npm install random-user`
 
-#### Client-Side JS
+#### Browser (client-side js)
 If you want to use this library in a client-side javascript project, you can: <br />
 1. Simply include it: `<script src="https://rawgit.com/giacomocerquone/random-user/master/dist/random-user.js" type="text/javascript"></script>` <br />
 or <br />
 2. Require it in a JS file like you do on node and then use browserify to build the dependencies (useful if you're already doing this in your project in other modules)
 
 # Usage
-**Attention**: If you're including this in an html page, 'randomUser' is the only way you can call the method since normally you won't have requireJS.
+**Attention**: If you're including this in an html page, `randomUser` is the only way you can call the method since normally you won't have requireJS.
 
 ```javascript
 var randomUser = require('./index.js');
