@@ -1,6 +1,6 @@
 # random-user
 
-This is a module I've worked on and finished in an hour. It's substiantally a very simple browser and node.js wrapper for the api service made available by [randomuser.me](https://randomuser.me/).
+This is a module I've worked on and finished in an hour. It's substiantally a very simple **browser** and **node.js** wrapper for the api service made available by [randomuser.me](https://randomuser.me/).
 
 ## Installation
 #### Node.js
