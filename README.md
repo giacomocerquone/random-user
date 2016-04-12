@@ -16,7 +16,7 @@ or <br />
 **Attention**: If you're including this in an html page, `randomUser` is the only way you can call the method since normally you won't have requireJS.
 
 ```javascript
-var randomUser = require('./index.js');
+var randomUser = require('random-user');
 
 randomUser('simple')
   .then( (data) => console.log(data) )

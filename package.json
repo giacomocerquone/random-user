@@ -1,6 +1,6 @@
 {
   "name": "random-user",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Random users generator - browser and node.js wrapper of randomuser.me/api/",
   "repository": "https://github.com/giacomocerquone/random-user.git",
   "main": "index.js",
