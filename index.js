@@ -2,11 +2,14 @@
 
 var request = require('superagent');
 
-module.exports = function(type) {
+module.exports = function(type, https) {
+  let protocol = 'http://';
+  if (https) protocol = 'https://';
+  
   return new Promise( (resolve, reject) => {
 
     request
-      .get('http://api.randomuser.me/')
+      .get(protocol + 'api.randomuser.me/')
       .end( (err, res) => {
         if (err)
           reject(err);
