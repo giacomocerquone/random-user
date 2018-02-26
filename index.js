@@ -2,9 +2,9 @@
 
 var request = require('superagent');
 
-module.exports = function(type, https) {
-  let protocol = 'http://';
-  if (https) protocol = 'https://';
+module.exports = function(type, use_http) {
+  let protocol = 'https://';
+  if (use_http) protocol = 'http://';
   
   return new Promise( (resolve, reject) => {
 
