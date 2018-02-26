@@ -5,7 +5,8 @@
   "repository": "https://github.com/giacomocerquone/random-user.git",
   "main": "index.js",
   "scripts": {
-    "build": "browserify index.js --standalone randomUser | uglifyjs -c -o dist/random-user.js"
+    "build": "browserify index.js --standalone randomUser | uglifyjs -c -o dist/random-user.js",
+    "test": "jest"
   },
   "keywords": [
     "random",
@@ -25,6 +26,7 @@
   },
   "devDependencies": {
     "browserify": "^13.0.0",
+    "jest": "^22.4.2",
     "uglify-js": "github:mishoo/UglifyJS2#harmony"
   }
 }
