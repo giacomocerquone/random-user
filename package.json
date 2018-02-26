@@ -27,6 +27,6 @@
   "devDependencies": {
     "browserify": "^13.0.0",
     "jest": "^22.4.2",
-    "uglify-js": "github:mishoo/UglifyJS2#harmony"
+    "uglify-es": "^3.3.9"
   }
 }
