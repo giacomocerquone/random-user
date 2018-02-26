@@ -1,12 +1,12 @@
 'use strict';
 
-var request = require('superagent');
+const request = require('superagent');
 
 module.exports = function(type) {
   return new Promise( (resolve, reject) => {
 
     request
-      .get('http://api.randomuser.me/')
+      .get('https://api.randomuser.me/')
       .end( (err, res) => {
         if (err)
           reject(err);
