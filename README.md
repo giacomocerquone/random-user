@@ -1,5 +1,7 @@
 # random-user
 
+[![Build Status](https://travis-ci.org/giacomocerquone/random-user.svg?branch=master)](https://travis-ci.org/giacomocerquone/random-user)
+
 This is a module I've worked on and finished in an hour. It's substiantally a very simple **browser** and **node.js** wrapper for the api service made available by [randomuser.me](https://randomuser.me/).
 
 ## Installation
